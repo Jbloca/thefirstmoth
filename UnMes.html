@@ -1,0 +1,749 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nuestro Primer Mes ❤️</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+</head>
+<body>
+    <div class="stars"></div>
+    <div class="floating-hearts"></div>
+    <div class="container">
+        <header class="header">
+            <h1>Un Mes de Amor ❤️</h1>
+            <p style="font-size: 1.2em; opacity: 0.9;">Celebrando nuestro primer mes juntos</p>
+        </header>
+
+        <section class="counter-section">
+            <h2 style="margin-bottom: 20px; color: #ffd93d;">Tiempo Juntos</h2>
+            <div class="counter-grid">
+                <div class="counter-item">
+                    <div class="counter-number" id="days">0</div>
+                    <div>Días</div>
+                </div>
+                <div class="counter-item">
+                    <div class="counter-number" id="hours">0</div>
+                    <div>Horas</div>
+                </div>
+                <div class="counter-item">
+                    <div class="counter-number" id="minutes">0</div>
+                    <div>Minutos</div>
+                </div>
+                <div class="counter-item">
+                    <div class="counter-number" id="seconds">0</div>
+                    <div>Segundos</div>
+                </div>
+            </div>
+        </section>
+
+        <section class="timeline">
+            <div class="timeline-item">
+                <div class="timeline-icon">💕</div>
+                <div class="timeline-content">
+                    <div class="timeline-date">13 de Abril, 2025</div>
+                    <div class="timeline-title">El Día que Todo Comenzó</div>
+                    <div class="timeline-description">
+                        El día que empezamos. Este día yo lo veo como nuestra segunda oportunidad de conocernos, donde nos dimos cuenta de que la conexión que teníamos era única.
+                    </div>
+                    <div class="timeline-photo">
+                        <div class="gallery-main1">
+                          <img src="imagees/827b2d63342e5c157b94e2c68001afee.jpg" alt="Foto especial">
+                        </div>
+                      </div>    
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-icon">👫</div>
+                <div class="timeline-content">
+                    <div class="timeline-date">17 de Abril, 2025</div>
+                    <div class="timeline-title">Descubriendo tu Sonrisa</div>
+                    <div class="timeline-description">
+                        Ese día fue especial, no solo por lo que pasó, sino porque fue donde me di cuenta de lo que me estaba pasando contigo y lo mucho que disfrutaba de tu compañía.
+                    </div>
+                    <div class="timeline-photo">
+                        <div class="gallery-main1">
+                          <img src="imagees/8d30150a1747df6743a6dadef0652efa.jpg" alt="Foto especial">
+                        </div>
+                      </div>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-icon">🍨</div>
+                <div class="timeline-content">
+                    <div class="timeline-date">26 de Abril, 2025</div>
+                    <div class="timeline-title">Tu compañia es lo mejor</div>
+                    <div class="timeline-description">
+                        Me di cuenta que no importa el lugar, siempre que estemos juntos, todo se siente perfecto. Que un simple paseo contigo se convierte en una aventura inolvidable.
+                    </div>
+                    <div class="timeline-photo">
+                        <div class="gallery-main1">
+                            <img src="imagees/IMG_1904.jpg" alt="Foto especial">
+                        </div>
+                      </div>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-icon">📱</div>
+                <div class="timeline-content">
+                    <div class="timeline-date">27 de Abril, 2025</div>
+                    <div class="timeline-title">Llamadas Infinitas</div>
+                    <div class="timeline-description">
+                        Esas noches donde hablamos hasta quedarnos dormidos, compartiendo sueños y risas. Cada conversación me hace sentir más cerca de ti, incluso cuando estamos lejos. Y ahora mi celular se ve así pero me encanta.
+                    </div>
+                    <div class="timeline-photo">
+                        <div class="gallery-main1">
+                          <img src="imagees/IMG_2371.jpg" alt="Llamadas">
+                        </div>
+                      </div>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-icon">⏳</div>
+                <div class="timeline-content">
+                    <div class="timeline-date">19 de Mayo, 2025</div>
+                    <div class="timeline-title">Lo sencillo</div>
+                    <div class="timeline-description">
+                        Contigo entendí que no importa el lugar, que lo que importa es estar juntos. Y que un simple viaje se convierte en una aventura o momentos inolvidables.
+                    </div>
+                    <div class="timeline-photo">
+                        <div class="gallery-main1">
+                            <iframe 
+                            src="imagees/IMG_2024.mp4" 
+                            width="100%" 
+                            height="300px" 
+                            allow="autoplay" 
+                            style="border: none;">
+                          </iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                <div class="timeline-item">
+                <div class="timeline-icon">🤣</div>
+                <div class="timeline-content">
+                    <div class="timeline-date">31 de Mayo, 2025</div>
+                    <div class="timeline-title">Juntos todo es diferente</div>
+                    <div class="timeline-description">
+                        Este dia me di cuenta de muchas cosas, lo primero que por mas que algo se vea aburrido, si estoy contigo todo se vuelve divertido. Y que un simple paseo se convierte en una aventura inolvidable.
+                    </div>
+                    <div class="timeline-photo">
+                        <div class="gallery-main1">
+                          <iframe 
+                            src="imagees/IMG_2116.mp4" 
+                            width="100%" 
+                            height="300px" 
+                            allow="autoplay" 
+                            style="border: none;">
+                          </iframe>
+                        </div>
+                      </div>
+                </div>
+            </div>
+                <div class="timeline-item">
+                <div class="timeline-icon">🎶</div>
+                <div class="timeline-content">
+                    <div class="timeline-date">1 de Junio, 2025</div>
+                    <div class="timeline-title">Contigo el tiempo se pasa volando</div>
+                    <div class="timeline-description">
+                        Bailar contigo por horas sin parar y disfrutar de cada momento. Me hizo entender que el hacer cosas contigo es lo que me hace feliz.
+                    </div>
+                    <div class="timeline-photo">
+                      <div class="gallery-main1">
+                        <iframe 
+                          src="imagees/IMG_2129.mp4" 
+                          width="100%" 
+                          height="300px" 
+                          allow="autoplay" 
+                          style="border: none;">
+                        </iframe>
+                      </div>
+                    </div>
+                </div>
+            </div>
+                <div class="timeline-item">
+                <div class="timeline-icon">♥️</div>
+                <div class="timeline-content">
+                    <div class="timeline-date">14 de Junio, 2025</div>
+                    <div class="timeline-title">No importa el tiempo, sino la persona</div>
+                    <div class="timeline-description">
+                        Dimos el siguiente paso en nuestra relación, y me di cuenta de que no importa cuánto tiempo pase, siempre quiero estar contigo. Cada día a tu lado es un regalo.
+                    </div>
+                    <div class="timeline-photo">
+                        <div class="gallery-main1">
+                          <img src="imagees/IMG_2209.jpg" alt="Foto especial">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-icon">🫂</div>
+              <div class="timeline-content">
+                  <div class="timeline-date">20 de Junio, 2025</div>
+                  <div class="timeline-title">Compartir momentos</div>
+                  <div class="timeline-description">
+                    El comer juntos sin importa el lugar o que estamos comiendo , es lo que me hace feliz. Compartir momentos con la persona que quiero es lo que realmente importa. 
+                  </div>
+                  <div class="timeline-photo">
+                      <div class="gallery-main1">
+                        <img src="imagees/IMG_2228.jpg" alt="Foto especial">
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-icon">💎</div>
+            <div class="timeline-content">
+                <div class="timeline-date">27 de Junio, 2025</div>
+                <div class="timeline-title">Momentos simples</div>
+                <div class="timeline-description">
+                  El hecho de disfrutar el estar contigo sentados en parque despues de clase, hablando de todo y de nada. Es lo mejor de dia. Me hace sentir que cada momento contigo es especial. 
+                </div>
+                <div class="timeline-photo">
+                    <div class="gallery-main1">
+                      <img src="imagees/IMG_2269.jpg" alt="Foto especial">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-icon">👨‍❤️‍👨</div>
+          <div class="timeline-content">
+              <div class="timeline-date">28 de Junio, 2025</div>
+              <div class="timeline-title">Citas juntos</div>
+              <div class="timeline-description">
+                El salir contigo o tener citas juntos, me reafirma que me encanta estar contigo. Que no importa que hagamos, siempre hay risas, jodas, cariño y felicidad. 
+              </div>
+              <div class="timeline-photo">
+                  <div class="gallery-main1">
+                    <img src="imagees/IMG_2280.jpg" alt="Foto especial">
+                  </div>
+              </div>
+          </div>
+      </div>
+                <div class="timeline-item">
+                <div class="timeline-icon">🎬</div>
+                <div class="timeline-content">
+                    <div class="timeline-date">4 de Julio, 2025</div>
+                    <div class="timeline-title">Pelis juntos</div>
+                    <div class="timeline-description"> 
+                        Compartir momentos juntos como ver películas o series... y que el verdadero plan perfecto seas tú.
+                    </div>
+                    <div class="timeline-photo">
+                        <div class="gallery-main1">
+                          <img src="imagees/IMG_2305.jpg" alt="Foto especial">
+                        </div>
+                    </div>
+                </div>
+            </div>
+                <div class="timeline-item">
+                <div class="timeline-icon">🌟</div>
+                <div class="timeline-content">
+                    <div class="timeline-date">5 de Julio, 2025</div>
+                    <div class="timeline-title">Cocinar juntos</div>
+                    <div class="timeline-description"> 
+                        Nunca pense disfrutar tanto el cocinar contigo, el entendernos hasta cuando cocinas. Ahi nos damos cuenta que la conexion que tenemos es unica.
+                    </div>
+                    <div class="timeline-photo">
+                        <div class="gallery-main1">
+                          <img src="imagees/IMG_2315.jpg" alt="Foto especial">
+                        </div>
+                    </div>
+                </div>
+            </div>
+                <div class="timeline-item">
+                <div class="timeline-icon">💌</div>
+                <div class="timeline-content">
+                    <div class="timeline-date">8 de Julio, 2025</div>
+                    <div class="timeline-title">Me enamoro mas de ti </div>
+                    <div class="timeline-description">
+                        Ese dia no supe como reaccionar, tuve emociones encontradas. Ese dia me marcara de por vida.
+                    </div>
+                    <div class="timeline-photo">
+                        <div class="gallery-main1">
+                          <img src="imagees/IMG_2337.jpg" alt="Foto especial">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="timeline-item">
+            <div class="timeline-icon">😍</div>
+                <div class="timeline-content">
+                <div class="timeline-date">14 de Julio, 2025</div>
+                <div class="timeline-title">Nuestro primer mes </div>
+                <div class="timeline-description">
+                    Este es solo el comienzo de muchos más, porque a tu lado quiero recorrerlo todo. En lo bueno y en lo difícil, contigo... porque contigo todo vale la pena.
+                    </div>
+                    <div class="timeline-photo">
+                        <div class="gallery-main1">
+                          <img src="imagees/IMG_2344.jpg" alt="Foto especial">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="map-section">
+  <h2>Lugares Especiales de Nuestra Historia</h2>
+  <h4 style="justify-content: center; display: flex; color: yellowgreen;">
+    Espero llenar todo ese mapa de momentos y anécdotas juntos.
+  </h4>
+  <div class="map-container">
+    <div id="map"></div>
+    <div class="map-info">
+      <div class="map-stats">
+        <div class="stat-item">
+          <span class="stat-number">6</span>
+          <span class="stat-label">Lugares Especiales</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-number">50+</span>
+          <span class="stat-label">Momentos Compartidos</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Modal para mostrar detalles del lugar -->
+<div id="locationModal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <div class="modal-header">
+      <h3 id="modalTitle">Lugar Especial</h3>
+      <p id="modalDate">Fecha</p>
+    </div>
+    <div class="modal-body">
+      <div class="location-gallery">
+        <div class="gallery-main">
+          <img id="modalMainImage" src="" alt="Foto del lugar" />
+        </div>
+        <div class="gallery-thumbnails" id="modalThumbnails">
+          <!-- Thumbnails se cargarán dinámicamente -->
+        </div>
+      </div>
+      <div class="location-details">
+        <p id="modalDescription">Descripción del lugar y momento especial.</p>
+        <div class="location-memories">
+          <h4>Recuerdos Especiales</h4>
+          <ul id="modalMemories">
+            <!-- Lista de recuerdos se cargará dinámicamente -->
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<section class="love-letter">
+  <div class="letter-container" id="letterContainer">
+      <div class="letter-envelope" id="letterEnvelope">
+          <div class="envelope-front">
+              <div>Para Ti, Mi Amor</div>
+          </div>
+          <div class="envelope-back">
+              <div>¡Ábrela!</div>
+          </div>
+      </div>
+      <div class="letter-content" id="letterContent">
+          <button class="close-letter" id="closeLetter">×</button>
+          <h2>Mi Carta de Amor 💕</h2>
+          <p>Mi amor hermoso,</p>
+          <p>
+              Han pasado exactamente un mes desde que llegaste a mi vida como un rayo de sol 
+              que iluminó todos mis días. Cada amanecer contigo ha sido una bendición, cada 
+              sonrisa tuya un regalo del cielo.
+          </p>
+          <p>
+              Aunque ahora estés lejos visitando a tu familia, quiero que sepas que mi corazón 
+              viaja contigo a cada lugar donde vas. La distancia no es nada cuando el amor es 
+              tan fuerte como el nuestro.
+          </p>
+          <p>
+              Eres la persona más increíble, hermosa y especial que he conocido. Tu risa es 
+              mi melodía favorita, tus ojos son mi hogar, y tu amor es mi mayor tesoro. 
+              No puedo esperar a que regreses para abrazarte fuerte y nunca dejarte ir.
+          </p>
+          <p>
+              Cada segundo que pasa sin ti se siente como una eternidad, pero cada recuerdo 
+              contigo me llena de alegría y esperanza. Te amo más de lo que las palabras 
+              pueden expresar, más de lo que el océano puede contener.
+          </p>
+          <p>
+              Gracias por ser mi compañera, mi mejor amiga, mi amor verdadero. Gracias por 
+              hacer que cada día sea una nueva aventura llena de amor y felicidad.
+          </p>
+          <p style="font-size: 1.3em; color: #ff6b6b; text-align: center; margin-top: 30px;">
+              ¡Feliz primer mes, mi vida! 💕
+          </p>
+          <div class="letter-signature">
+              Con todo mi amor,<br>
+              Tu enamorado ❤️
+          </div>
+      </div>
+  </div>
+  <div class="click-instruction">
+      ✨ Haz clic en la carta para abrirla ✨
+  </div>
+</section>
+
+<script>
+  // Estrellas y corazones flotantes
+  function createStars() {
+    const starsContainer = document.querySelector('.stars');
+    for (let i = 0; i < 100; i++) {
+      const star = document.createElement('div');
+      star.className = 'star';
+      star.style.left = Math.random() * 100 + '%';
+      star.style.top = Math.random() * 100 + '%';
+      star.style.animationDelay = Math.random() * 2 + 's';
+      starsContainer.appendChild(star);
+    }
+  }
+
+  function createFloatingHearts() {
+    const heartsContainer = document.querySelector('.floating-hearts');
+    setInterval(() => {
+      const heart = document.createElement('div');
+      heart.className = 'heart';
+      heart.innerHTML = '❤️';
+      heart.style.left = Math.random() * 100 + '%';
+      heart.style.animationDuration = (Math.random() * 3 + 3) + 's';
+      heartsContainer.appendChild(heart);
+      setTimeout(() => heart.remove(), 6000);
+    }, 2000);
+  }
+
+  function updateCounter() {
+    const startDate = new Date('2025-06-14T00:00:00');
+    const now = new Date();
+    const diff = now - startDate;
+
+    const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+    const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+    const seconds = Math.floor((diff % (1000 * 60)) / 1000);
+
+    document.getElementById('days').textContent = days;
+    document.getElementById('hours').textContent = hours;
+    document.getElementById('minutes').textContent = minutes;
+    document.getElementById('seconds').textContent = seconds;
+  }
+
+  function setupLoveCard() {
+    const letterContainer = document.getElementById('letterContainer');
+    const letterEnvelope = document.getElementById('letterEnvelope');
+    const letterContent = document.getElementById('letterContent');
+    const closeLetter = document.getElementById('closeLetter');
+
+    // Verificar que los elementos existan
+    if (!letterContainer || !letterEnvelope || !letterContent || !closeLetter) {
+        console.error('Elementos de la carta no encontrados');
+        return;
+    }
+
+    letterContainer.addEventListener('click', function(e) {
+        // Evitar que se ejecute si hacen clic en el botón de cerrar
+        if (e.target === closeLetter) return;
+        
+        // Voltear el sobre
+        letterEnvelope.classList.add('opened');
+        
+        // Mostrar el contenido después de un delay
+        setTimeout(() => {
+            letterContent.classList.add('visible');
+        }, 400);
+    });
+
+    closeLetter.addEventListener('click', function(e) {
+        e.stopPropagation(); // Evitar que se propague al contenedor
+        
+        // Ocultar el contenido
+        letterContent.classList.remove('visible');
+        
+        // Voltear el sobre de vuelta después de un delay
+        setTimeout(() => {
+            letterEnvelope.classList.remove('opened');
+        }, 400);
+    });
+
+    document.addEventListener('click', function(e) {
+        if (!letterContainer.contains(e.target) && letterContent.classList.contains('visible')) {
+            letterContent.classList.remove('visible');
+            setTimeout(() => {
+                letterEnvelope.classList.remove('opened');
+            }, 400);
+        }
+    });
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+    setupLoveCard();
+});
+
+  // Inicializar
+  document.addEventListener('DOMContentLoaded', function() {
+    createStars();
+    createFloatingHearts();
+    // initMap(); // Remove this duplicate call
+    updateCounter();
+    setInterval(updateCounter, 1000);
+    // Modal event listeners
+    const modal = document.getElementById('locationModal');
+    const closeBtn = document.querySelector('.close');
+
+    closeBtn.onclick = closeLocationModal;
+    window.onclick = function(event) {
+        if (event.target === modal) {
+            closeLocationModal();
+        }
+    }
+ });
+</script>
+
+    <script>
+        // Función para crear estrellas
+        function createStars() {
+            const starsContainer = document.querySelector('.stars');
+            for (let i = 0; i < 100; i++) {
+                const star = document.createElement('div');
+                star.className = 'star';
+                star.style.left = Math.random() * 100 + '%';
+                star.style.top = Math.random() * 100 + '%';
+                star.style.animationDelay = Math.random() * 2 + 's';
+                starsContainer.appendChild(star);
+            }
+        }
+
+        // Función para crear corazones flotantes
+        function createFloatingHearts() {
+            const heartsContainer = document.querySelector('.floating-hearts');
+            setInterval(() => {
+                const heart = document.createElement('div');
+                heart.className = 'heart';
+                heart.innerHTML = '❤️';
+                heart.style.left = Math.random() * 100 + '%';
+                heart.style.animationDuration = (Math.random() * 3 + 3) + 's';
+                heartsContainer.appendChild(heart);
+
+                setTimeout(() => {
+                    heart.remove();
+                }, 6000);
+            }, 2000);
+        }
+
+        // Contador de tiempo
+        function updateCounter() {
+
+            const startDate = new Date('2025-06-14T00:00:00');
+            const now = new Date();
+            const diff = now - startDate;
+
+            const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((diff % (1000 * 60)) / 1000);
+
+            document.getElementById('days').textContent = days;
+            document.getElementById('hours').textContent = hours;
+            document.getElementById('minutes').textContent = minutes;
+            document.getElementById('seconds').textContent = seconds;
+        }
+
+        // Datos de los lugares especiales
+        const specialPlaces = [
+            {
+                id: 1,
+                name: "Donde nos conocimos",
+                date: "13 de Abril, 2025",
+                lat:  -12.0725,
+                lng: -76.9517,
+                description: "El lugar donde todo comenzó. Aquí fue donde nos dimos cuenta de que la conexión que teníamos era única y especial.",
+                memories: [
+                    "La primera vez que conectamos",
+                    "Nuestras largas conversaciones ",
+                    "El momento en que supe que eras especial"
+                ],
+                photos: [ "imagees/IMG_2356.jpg", "imagees/IMG_1876.jpg","imagees/IMG_2228.jpg" ],
+                icon: "💕"
+            },
+            {
+                id: 2,
+                name: "Nuestra primera salida",
+                date: "13 de Abril, 2025",
+                lat:  -12.07083333,
+                lng: -77.03333333,
+                description: "El día donde descubrí tu hermosa sonrisa y me di cuenta de lo mucho que disfrutaba de tu compañía.",
+                memories: [
+                    "Conocer un poco mas del otro",
+                    "Las risas compartidas",
+                    "El escuchar nuestras historias"
+                ],
+                photos: ["imagees/827b2d63342e5c157b94e2c68001afee.jpg","imagees/Captura de pantalla 2025-07-12 a las 4.14.43 p. m..png"],
+                icon: "🌹"
+            },
+            {
+                id: 3,
+                name: "Nuestro lugar favorito",
+                date: "17 de Abril, 2025",
+                lat: -12.070671,
+                lng: -76.950943,
+                description: "El lugar donde nos dimos cuenta de que no importa el sitio, siempre que estemos juntos todo es perfecto.",
+                memories: [
+                    "Nuestros horas interminables",
+                    "Las conversaciones profundas",
+                    "Los momentos de silencio cómodo"
+                ],
+                photos: ["imagees/IMG_2374.PNG","imagees/IMG_2036.jpg", "imagees/IMG_1904.jpg", "imagees/IMG_2269.jpg"],
+                icon: "🌟"
+            },
+            {
+                id: 4,
+                name: "Donde decidimos dar el siguiente paso",
+                date: "14 de Junio, 2025",
+                lat: -12.121601,
+                lng: -77.045062,
+                description: "El momento más especial de nuestra relación, donde dimos el siguiente paso y confirmamos nuestros sentimientos.",
+                memories: [
+                    "Las palabras que cambiaron todo",
+                    "El beso que empezo todo",
+                    "Los abrazos frente al mar"
+                ],
+                photos: ["imagees/IMG_2210.jpg","imagees/IMG_2209.jpg", "imagees/8d30150a1747df6743a6dadef0652efa.jpg"],
+                icon: "💖"
+            },
+                {
+                    id: 5,
+                    name: "Un nuevo lugar especial",
+                    date: "28 de Junio, 2025",
+                    lat: -12.086204,
+                    lng: -76.975382,
+                    icon: "🌄",
+                    description: "Un rincón más de nuestra historia, donde compartimos una tarde inolvidable.",
+                    memories: [
+                        "Las comidas juntos",
+                        "Las bromas divertidas",
+                        "El Caminar juntos"
+                    ],
+                    photos: ["imagees/IMG_2279.jpg","imagees/IMG_2276.jpg"],
+                    icon: "🌄"
+            },
+
+                        {
+                id: 6,
+                name: "Mi house",
+                date: "14 de Junio, 2025",
+                lat: -12.068182,
+                lng: -77.076648,
+                icon: "🌄",
+                description: "Un rincón más de nuestra historia, donde conociste a mi familia.",
+                memories: [
+                    "Cocinamos juntos",
+                    "Nos Reimos con mi familia",
+                    "Dsifrutamos el tiempo juntos"
+                ],
+                photos: ["imagees/IMG_2388.jpg", "imagees/IMG_2204.jpg"],
+                icon: "🏘️"
+            },
+        ];
+
+        // Inicializar mapa
+        function initMap() {
+            const map = L.map('map').setView([-12.062107, -77.036526], 12);
+            
+            L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            }).addTo(map);
+
+            // Agregar marcadores personalizados
+            specialPlaces.forEach(place => {
+                const customIcon = L.divIcon({
+                    className: 'custom-marker',
+                    html: `<div style="background: #ff6b6b; color: white; width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 20px; border: 3px solid white; box-shadow: 0 2px 10px rgba(0,0,0,0.3);">${place.icon}</div>`,
+                    iconSize: [40, 40],
+                    iconAnchor: [20, 20]
+                });
+
+                const marker = L.marker([place.lat, place.lng], { icon: customIcon }).addTo(map);
+                
+                const popupContent = `
+                    <div class="custom-popup">
+                        <h3>${place.name}</h3>
+                        <p>${place.date}</p>
+                        <p>${place.description.substring(0, 100)}...</p>
+                        <button onclick="openLocationModal(${place.id})">Ver más detalles</button>
+                    </div>
+                `;
+                
+                marker.bindPopup(popupContent);
+            });
+        }
+
+        // Modal functionality
+        function openLocationModal(placeId) {
+            const place = specialPlaces.find(p => p.id === placeId);
+            if (!place) return;
+
+            document.getElementById('modalTitle').textContent = place.name;
+            document.getElementById('modalDate').textContent = place.date;
+            document.getElementById('modalDescription').textContent = place.description;
+            document.getElementById('modalMainImage').src = place.photos[0];
+
+            // Cargar thumbnails
+            const thumbnailsContainer = document.getElementById('modalThumbnails');
+            thumbnailsContainer.innerHTML = '';
+            place.photos.forEach((photo, index) => {
+                const thumbnail = document.createElement('img');
+                thumbnail.src = photo;
+                thumbnail.className = 'thumbnail' + (index === 0 ? ' active' : '');
+                thumbnail.onclick = () => {
+                    document.getElementById('modalMainImage').src = photo;
+                    document.querySelectorAll('.thumbnail').forEach(t => t.classList.remove('active'));
+                    thumbnail.classList.add('active');
+                };
+                thumbnailsContainer.appendChild(thumbnail);
+            });
+
+            // Cargar recuerdos
+            const memoriesContainer = document.getElementById('modalMemories');
+            memoriesContainer.innerHTML = '';
+            place.memories.forEach(memory => {
+                const li = document.createElement('li');
+                li.textContent = memory;
+                memoriesContainer.appendChild(li);
+            });
+
+            document.getElementById('locationModal').style.display = 'block';
+        }
+
+        function closeLocationModal() {
+            document.getElementById('locationModal').style.display = 'none';
+        }
+
+        // Inicializar todo
+        document.addEventListener('DOMContentLoaded', function() {
+            createStars();
+            createFloatingHearts();
+            initMap();
+            updateCounter();
+            setInterval(updateCounter, 1000);
+
+            // Modal event listeners
+            const modal = document.getElementById('locationModal');
+            const closeBtn = document.querySelector('.close');
+
+            closeBtn.onclick = closeLocationModal;
+            window.onclick = function(event) {
+                if (event.target === modal) {
+                    closeLocationModal();
+                }
+            }
+        });
+    </script>
+</body>
+</html>
